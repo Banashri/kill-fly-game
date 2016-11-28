@@ -1,0 +1,13 @@
+<project>
+
+<target name="run">
+
+<parallel>
+<ant antfile="../RMIServer/build.xml" dir="../RMIServer" target="GameServer" inheritAll="false" />
+<ant antfile="../RMIClient/build.xml" dir="../RMIClient" target="GameClient" inheritAll="false" />
+<ant antfile="../RMIClient/build.xml" dir="../RMIClient" target="GameClient" inheritAll="false" />
+</parallel>
+
+</target>
+
+</project>
